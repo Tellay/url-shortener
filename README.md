@@ -1,4 +1,4 @@
 ## Url Shortener
 ### Hi there, this is my new little project.
 
-<img source="https://i.imgur.com/Rpp1XPO.png">
+<img align="left" alt=".env" width="26px" src="https://i.imgur.com/Rpp1XPO.png" />
