@@ -1,0 +1,16 @@
+const Client = require('../client/index');
+const { Message } = require('discord.js');
+
+module.exports = {
+    name: 'cmd',
+    
+    /**
+     * @param {Client} client
+     * @param {Message} message
+     * @param {String[]} args
+     */
+    
+    run: async (client, message, args) => {
+
+    }
+}

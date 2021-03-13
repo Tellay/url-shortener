@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.box, form {
+    display: flex;
+    flex-direction: column;
+}
+
+main>div>form>.input-primary {
+    padding: 20px;
+    outline: none;
+    border: none;
+    transition: 0.3s ease;
+    background: rgba(246, 246, 246, 0.404);
+    margin-bottom: 1rem;
+}
+
+main>div>form>.submit-primary {
+    width: 13rem;
+    height: 3rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: 0.3s ease;
+}
+
+main>div>form>.submit-primary:hover {
+    background: rgb(179, 179, 179);
+}
+
+.btn-delete {
+    background: rgb(251, 103, 103);
+    color: white;
+    transition: 0.2s ease;
+    margin-top: -103.4rem;
+}
+
+main>div>a>.delete-submit {
+    background: rgb(251, 103, 103);
+    width: 13rem;
+    height: 3rem;
+    outline: none;
+    border: none;
+    transition: 0.3s ease;
+    margin-top: 1rem;
+    color: white;
+}
+
+main>div>a>.delete-submit:hover {
+    background: rgb(218, 81, 81);
+    cursor: pointer;
+    transition: 0.3s ease;
+}   
+
+main>div>form>.delete-submit {
+    background: rgb(251, 103, 103);
+    width: 13rem;
+    height: 3rem;
+    outline: none;
+    border: none;
+    transition: 0.3s ease;
+    margin-top: 1rem;
+    color: white;
+}
+
+
+main>div>form>.delete-submit:hover {
+    background: rgb(218, 81, 81);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+main>div>a>.submit-primary {
+    background: rgba(239,239,239,255);
+    width: 13rem;
+    height: 3rem;
+    outline: none;
+    border: none;
+    transition: 0.3s ease;
+    margin-top: 1rem;
+    z-index: 99;
+}
+
+
+main>div>a>.submit-primary:hover {
+    background: rgb(179, 179, 179);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
