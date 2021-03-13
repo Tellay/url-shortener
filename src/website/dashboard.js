@@ -3,8 +3,6 @@ const express = require('express');
 const session = require('express-session');
 const app = express();
 
-const passport = require('passport');
-const DiscordStrategy = require('passport-discord').Strategy;
 const path = require('path');
 
 const bodyParser = require('body-parser');
@@ -39,23 +37,7 @@ module.exports.load = client => {
             resave: false,
             saveUninitialized: false
         })
-    )
-    
-    app.use(passport.initialize());
-    app.use(passport.session());
-    
-    const scopes = ['identify', 'guilds'];
-    passport.use(new DiscordStrategy({
-        clientID: process.env.ID,
-        clientSecret: process.env.SECRET,
-        callbackURL: `http://localhost:${PORT}/callback`,
-        scope: scopes
-    }, async (accessToken, refreshToken, profile, done) => {
-        process.nextTick(async () => {
-            console.log(profile);
-            return done(null, profile);
-        });
-    }));
+    );
 
     app.use('/', require('./routes/home'));
     
