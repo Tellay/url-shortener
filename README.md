@@ -1,5 +1,6 @@
 ### Url Shortener
-Hi there, this is my new little project.
+* Hi there, this is my new little project.
+* This have a connection with a discord bot.
 
 -----------------------------------------------
 
