@@ -5,7 +5,7 @@
 -----------------------------------------------
 
 Use npm install in terminal. <br>
-You must create a .env equal to the image. <br>
+You must create a .env like the image. <br>
 You are free to use this code and improve it.
 
 <img align="left" alt=".env" src="https://i.imgur.com/Rpp1XPO.png" />
