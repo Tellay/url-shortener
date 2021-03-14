@@ -1,11 +1,15 @@
-### Url Shortener
-* Hi there, this is my new little project.
-* This have a connection with a discord bot.
+<h1 align="center"><b>Url Shortener<b/></h1>
+
+## About
+This is a simple url shortener which is integrated with discord.
+
+## Installation
+- Node is required.
+- Clone this repository and open.
+- Use npm install in the terminal.
+- Create a file whose name is .env and make it look like what is in the image but with your information.
+- Run it.
 
 -----------------------------------------------
-
-Use npm install in terminal. <br>
-You must create a .env like the image. <br>
-You are free to use this code and improve it.
 
 <img align="left" alt=".env" src="https://i.imgur.com/Rpp1XPO.png" />
