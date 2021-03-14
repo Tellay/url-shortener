@@ -36,7 +36,7 @@ router.post('/create', (req, res) => {
                     .addFields(
                         { name: '🎫 Slug', value: slug },
                         { name: '📡 Link', value: link },
-                        { name: '📱 Created link', value: `**[Click here](http://localhost:3000/redirect/${slug})**` },
+                        { name: '📱 Created link', value: `http://localhost:3000/redirect/${slug}` },
                     )
                         .setColor('#70ff03');
                 
