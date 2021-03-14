@@ -99,3 +99,7 @@ main>div>a>.submit-primary:hover {
     cursor: pointer;
     transition: 0.3s ease;
 }
+
+::selection {
+    background: transparent;
+}
