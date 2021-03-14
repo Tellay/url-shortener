@@ -3,7 +3,7 @@
   <h1><b>Url Shortener<b/><h1/>
 </div>
 
-## About
+# About
 This is a simple url shortener which is integrated with discord.
 
 ### Installation
