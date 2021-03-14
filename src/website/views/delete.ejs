@@ -1,0 +1,14 @@
+<%- include('components/header.ejs') %>
+
+<body>
+    <main>
+        <div class="box">
+            <form action="/delete" method="post" class="main-form">
+                <input type="text" name="slug" placeholder="Your slug..." class="input-primary" required>
+                <input type="text" name="link" placeholder="Your link..." class="input-primary" required>
+                <input type="submit" value="Delete" class="delete-submit">
+            </form>
+            <a href="/"><button class="submit-primary">Create</button></a>
+        </div>
+    </main>
+</body>

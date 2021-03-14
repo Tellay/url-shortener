@@ -80,8 +80,4 @@ router.post('/delete', async (req, res) => {
     });
 });
 
-router.get('/test', (req, res) => {
-    res.render('delete.ejs');
-});
-
 module.exports = router;
