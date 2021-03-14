@@ -17,7 +17,7 @@ module.exports.load = client => {
     app.engine("html", require("ejs").renderFile);
     app.set('view-engine', 'ejs');
     app.use(express.static(path.join(__dirname, "/website")));
-    app.use(express.static(path.join(__dirname, "/public")))
+    app.use(express.static(path.join(__dirname, "/css")))
     app.set("views", path.join(__dirname, "views"))
     app.use(function(req, res, next) {
         req.bot = client;
