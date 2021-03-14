@@ -1,4 +1,4 @@
-<h1 align="center"><b>Url Shortener<b/><h1/>
+<h1 align="center"><b>Url Shortener<b/></h1>
 
 ## About
 This is a simple url shortener which is integrated with discord.
