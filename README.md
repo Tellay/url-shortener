@@ -8,6 +8,7 @@ This is a simple url shortener which is integrated with discord.
 - Clone this repository and open.
 - Use npm install in the terminal.
 - Create a file whose name is .env and make it look like what is in the image but with your information.
+- Run it.
 
 -----------------------------------------------
 
