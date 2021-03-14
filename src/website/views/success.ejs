@@ -1,14 +1,17 @@
 <%- include('components/header.ejs') %>
 
+<link rel="stylesheet" href="/css/module.style.success.css">
+
 <body>
-    <main style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh;">
-        <h1>SUCCESS</h1>
-        <p><%= success %></p>
-        <% if(shortener && shortener === true) { %>
-            <p>Slug: <%= slug %></p>
-            <p>Link: <%= link %></p>
-            <a href="http://localhost:3000/redirect/<%= slug %>">Click</a>
-        <% } %>
-        <a href="/">Back</a>
+    <main>
+        <div class="box">
+            <h1>SUCCESS</h1>
+            <% if(shortener === true) { %>
+                <a href="http://localhost:3000/redirect/<%= slug %>"><%= success %></a>
+            <% } else { %>
+                <p><%= success %></p>
+            <% } %>
+        </div>
+        <a href="/"><button><h2>BACK</h2></button></a>
     </main>
 </body>

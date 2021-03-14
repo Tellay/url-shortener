@@ -12,9 +12,7 @@ router.get('/redirect/:slug', (req, res) => {
     const { slug } = req.params;
     Shorteners.findOne({ slug: slug }, async (err, response) => {
         if(!response) {
-            return res.render('error.ejs', {
-                _client: req.bot.user
-            });
+            return res.redirect('/');
         }
 
         res.redirect(response.link);
@@ -31,18 +29,18 @@ router.post('/create', (req, res) => {
             let regex = new RegExp(urlRegex);
             if(regex.test(link)) {
 
-                const created = new Discord.MessageEmbed()
-                .setTitle('New shortener!')
-                    .addFields(
-                        { name: '🎫 Slug', value: slug },
-                        { name: '📡 Link', value: link },
-                        { name: '📱 Created link', value: `http://localhost:3000/redirect/${slug}` },
-                    )
-                        .setColor('#70ff03');
+                // const created = new Discord.MessageEmbed()
+                // .setTitle('New shortener!')
+                //     .addFields(
+                //         { name: '🎫 Slug', value: slug },
+                //         { name: '📡 Link', value: link },
+                //         { name: '📱 Created link', value: `http://localhost:3000/redirect/${slug}` },
+                //     )
+                //         .setColor('#70ff03');
                 
-                req.bot.channels.cache.get(process.env.CHANNEL).send(created);
+                // req.bot.channels.cache.get(process.env.CHANNEL).send(created);
 
-                res.render('success.ejs', { success: 'Your shortener has been created.', shortener: true, slug: slug, link: link });
+                res.render('success.ejs', { success: 'Your shortener has been created.', shortener: true, slug: slug, link: link, PORT: process.env.PORT });
                 return Shorteners.create({ slug: slug, link: link });
             } else {
                 res.render('error.ejs', { error: 'Not a valid link!' });
@@ -64,15 +62,15 @@ router.post('/delete', async (req, res) => {
     Shorteners.findOne({ slug: slug, link: link }, async (err, response) => {
         if(response) {
 
-            const created = new Discord.MessageEmbed()
-            .setTitle('Deleted shortener!')
-                .addFields(
-                    { name: '🎫 Slug', value: slug },
-                    { name: '📡 Link', value: link },
-                )
-                    .setColor('#ff0000');
+            // const created = new Discord.MessageEmbed()
+            // .setTitle('Deleted shortener!')
+            //     .addFields(
+            //         { name: '🎫 Slug', value: slug },
+            //         { name: '📡 Link', value: link },
+            //     )
+            //         .setColor('#ff0000');
             
-            req.bot.channels.cache.get(process.env.CHANNEL).send(created);
+            // req.bot.channels.cache.get(process.env.CHANNEL).send(created);
 
             await Shorteners.deleteOne({ slug: slug, link: link });
             return res.render('success.ejs', { success: 'Your shortener has been deleted.', shortener: false });
@@ -80,6 +78,10 @@ router.post('/delete', async (req, res) => {
             res.render('error.ejs', { error: 'Impossible to find the data entered.' });
         }
     });
+});
+
+router.get('/test', (req, res) => {
+    res.render('delete.ejs');
 });
 
 module.exports = router;

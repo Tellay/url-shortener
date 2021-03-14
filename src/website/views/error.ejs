@@ -1,9 +1,13 @@
 <%- include('components/header.ejs') %>
 
+<link rel="stylesheet" href="/css/module.style.delete.css">
+
 <body>
-    <main style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh;">
-        <h1>ERROR</h1>
-        <p><%= error %></p>
-        <a href="/">Back</a>
+    <main>
+        <div class="box">
+            <h1>ERROR</h1>
+            <p><%= error %></p>
+        </div>
+        <a href="/"><button><h2>BACK</h2></button></a>
     </main>
 </body>
