@@ -2,10 +2,10 @@
   <h1><b>Url Shortener<b/><h1/>
 </div>
 
-### About
+## About
 This is a simple url shortener which is integrated with discord.
 
-### Installation
+## Installation
 - Node is required.
 - Clone this repository and open.
 - Use npm install in the terminal.
