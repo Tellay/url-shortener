@@ -1,7 +1,7 @@
 ## About
 This is a simple url shortener which is integrated with discord.
 
-<br/>
+##
 
 ## Installation
 - Node is required.
