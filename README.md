@@ -1,7 +1,7 @@
 ## About Url-Shortener
 This is a simple url shortener which is integrated with discord.
 
-##
+-----------------------------------------------
 
 ## Installation
 - Node is required.
