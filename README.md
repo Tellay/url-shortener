@@ -1,4 +1,4 @@
-## <b><About Url-Shortener<b/>
+## <b>About Url-Shortener<b/>
 This is a simple url shortener which is integrated with discord.
 
 ##
