@@ -19,4 +19,5 @@ PORT=Your website port.
 MONGO_URI=Monngo access uri.
 CHANNEL= Channel where the embeds will be send.
 ```
-<image source="https://i.imgur.com/w9uGqQf.png">
+
+<img src="https://i.imgur.com/w9uGqQf.png">
