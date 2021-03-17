@@ -1,5 +1,3 @@
-<h1 align="center"><b>Url Shortener<b/></h1>
-
 ## About
 This is a simple url shortener which is integrated with discord.
 
@@ -7,9 +5,15 @@ This is a simple url shortener which is integrated with discord.
 - Node is required.
 - Clone this repository and open.
 - Use npm install in the terminal.
-- Create a file whose name is .env and make it look like what is in the image but with your information.
+- Create a file whose name is .env and make it look like what is in below but with your information.
 - Run it.
 
 -----------------------------------------------
 
-<img align="left" alt=".env" src="https://i.imgur.com/Rpp1XPO.png" />
+```env
+PREFIX=Your bot prefix.
+ID=ID of your bot.
+PORT=Your website port.
+MONGO_URI=Monngo access uri.
+CHANNEL= Channel where the embeds will be send.
+```
