@@ -23,7 +23,8 @@ main>div>form>.input-primary {
     outline: none;
     border: none;
     transition: 0.3s ease;
-    background: rgba(246, 246, 246, 0.404);
+    /* background: rgba(246, 246, 246, 0.404); */
+    border: 1px solid rgba(192, 192, 192, 0.205);
     margin-bottom: 1rem;
 }
 
